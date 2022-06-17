@@ -8,11 +8,11 @@
 
 ## Expectation
 
-1. Shared a typescript library for both `electron` and `frontend ( react )` packages.
+1. Shared a typescript library for both `electron` and `frontend ( react )`.
 
 ## Problems
 
-1. Symlinks in node_modules by `Lerna + Yarn` or `npm workspace` is having issue when building electron.
+1. Symlinks in node_modules by `Lerna + Yarn` or `npm workspace` is having issue when packing symlinks into executables on electron-builder.
 
 2. Correctly setting up esm, cjs released files.
 
@@ -24,7 +24,7 @@
 
 ## Caveat
 
-1. Need to run `yarn upgrade my-shared` whenever the file changed.
+1. Need to run `yarn upgrade my-shared` on `frontend` or `electron` whenever the file changed in `my-shared`.
 
 references:
 
